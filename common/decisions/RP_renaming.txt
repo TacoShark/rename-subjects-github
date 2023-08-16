@@ -1029,6 +1029,238 @@ RP_renaming_category = {
             FROM = { set_cosmetic_tag = RP_banate_the }
         }
     }
+	RP_margraviate_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = monarchy_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_margraviate }
+        }
+    }
+	RP_margraviate_the_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = monarchy_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_margraviate_the }
+        }
+    }
+	RP_tsardom_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = monarchy_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_tsardom }
+        }
+    }
+	RP_tsardom_the_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = monarchy_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_tsardom_the }
+        }
+    }
+	RP_adj_tsardom_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = monarchy_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_adj_tsardom }
+        }
+    }
+	RP_sultanate_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = monarchy_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_sultanate }
+        }
+    }
+	RP_sultanate_the_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = monarchy_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_sultanate_the }
+        }
+    }
+	RP_adj_sultanate_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = monarchy_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_adj_sultanate }
+        }
+    }
     RP_show_fed_decisions = {
 
         icon = generic_form_nation
