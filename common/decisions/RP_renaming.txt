@@ -884,6 +884,151 @@ RP_renaming_category = {
             FROM = { set_cosmetic_tag = RP_grand_duchy_the }
         }
     }
+	RP_banovina_the_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = monarchy_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_banovina }
+        }
+    }
+	RP_banovina_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = monarchy_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_banovina }
+        }
+    }
+	RP_banovina_the_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = monarchy_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_banovina_the }
+        }
+    }
+	RP_banate_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = monarchy_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_banate }
+        }
+    }
+	RP_banate_the_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = monarchy_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_banate_the }
+        }
+    }
     RP_show_fed_decisions = {
 
         icon = generic_form_nation
