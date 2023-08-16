@@ -1,0 +1,4 @@
+RP_renaming_category = {
+
+    icon = generic_formable_nations
+}

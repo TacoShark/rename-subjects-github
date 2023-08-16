@@ -1,0 +1,2601 @@
+RP_renaming_category = {
+    RP_show_decisions = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                has_country_flag = decisions_are_hidden
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+
+        complete_effect = {
+            FROM = {
+                clr_country_flag = decisions_are_hidden
+            }
+        }
+    }
+    RP_hide_decisions = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+
+        complete_effect = {
+            FROM = {
+                set_country_flag = decisions_are_hidden
+            }
+        }
+    }
+    RP_show_republican_decisions = {
+
+        icon = generic_form_nation
+        
+        visible = {
+            has_country_flag = republican_decisions_hidden
+        }
+
+        complete_effect = {
+            clr_country_flag = republican_decisions_hidden
+        }
+    }
+    RP_hide_republican_decisions = {
+
+        icon = generic_form_nation
+        
+        visible = {
+            NOT = {
+                has_country_flag = republican_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            set_country_flag = republican_decisions_hidden
+        }
+    }
+    RP_republic_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = republican_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_republic }
+        }
+    }
+    RP_republic_the_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = republican_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_republic_the }
+        }
+    }
+    RP_adj_republic_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = republican_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_adj_republic }
+        }
+    }
+    RP_federal_republic_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = republican_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_federal_republic }
+        }
+    }
+    RP_federal_republic_the_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = republican_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_federal_republic_the }
+        }
+    }
+    RP_adj_federal_republic_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = republican_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_adj_federal_republic }
+        }
+    }
+    RP_united_republic_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = republican_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_united_republic }
+        }
+    }
+    RP_united_republic_the_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = republican_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_united_republic_the }
+        }
+    }
+    RP_socialist_republic_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = republican_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_socialist_republic }
+        }
+    }
+    RP_socialist_republic_the_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = republican_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_socialist_republic_the }
+        }
+    }
+    RP_adj_socialist_republic_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = republican_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_adj_socialist_republic }
+        }
+    }
+    RP_popular_republic_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = republican_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_popular_republic }
+        }
+    }
+    RP_popular_republic_the_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = republican_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_popular_republic_the }
+        }
+    }
+    RP_adj_popular_republic_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = republican_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_adj_popular_republic }
+        }
+    }
+    RP_democratic_republic_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = republican_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_democratic_republic }
+        }
+    }
+    RP_democratic_republic_the_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = republican_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_democratic_republic_the }
+        }
+    }
+    RP_adj_democratic_republic_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = republican_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_adj_democratic_republic }
+        }
+    }
+    RP_soviet_republic_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = republican_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_soviet_republic }
+        }
+    }
+    RP_soviet_republic_the_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = republican_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_soviet_republic_the }
+        }
+    }
+    RP_adj_soviet_republic_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = republican_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_adj_soviet_republic }
+        }
+    }
+    RP_show_monarchical_decisions = {
+
+        icon = generic_form_nation
+        
+        visible = {
+            has_country_flag = monarchy_decisions_hidden
+        }
+
+        complete_effect = {
+            clr_country_flag = monarchy_decisions_hidden
+        }
+    }
+    RP_hide_monarchical_decisions = {
+
+        icon = generic_form_nation
+        
+        visible = {
+            NOT = {
+                has_country_flag = monarchy_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            set_country_flag = monarchy_decisions_hidden
+        }
+    }
+    RP_kingdom_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = monarchy_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_kingdom }
+        }
+    }
+    RP_kingdom_the_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = monarchy_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_kingdom_the }
+        }
+    }
+    RP_adj_kingdom_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = monarchy_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_adj_kingdom }
+        }
+    }
+    RP_duchy_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = monarchy_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_duchy }
+        }
+    }
+    RP_duchy_the_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = monarchy_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_duchy_the }
+        }
+    }
+    RP_grand_duchy_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = monarchy_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_grand_duchy }
+        }
+    }
+    RP_grand_duchy_the_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = monarchy_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_grand_duchy_the }
+        }
+    }
+    RP_show_fed_decisions = {
+
+        icon = generic_form_nation
+        
+        visible = {
+            has_country_flag = fed_decisions_hidden
+        }
+
+        complete_effect = {
+            clr_country_flag = fed_decisions_hidden
+        }
+    }
+    RP_hide_fed_decisions = {
+
+        icon = generic_form_nation
+        
+        visible = {
+            NOT = {
+                has_country_flag = fed_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            set_country_flag = fed_decisions_hidden
+        }
+    }
+    RP_confederation_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = fed_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_confederation }
+        }
+    }
+    RP_confederation_the_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = fed_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_confederation_the }
+        }
+    }
+    RP_adj_confederation_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = fed_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_adj_confederation }
+        }
+    }
+    RP_federation_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = fed_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_federation }
+        }
+    }
+    RP_federation_the_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = fed_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_federation_the }
+        }
+    }
+    RP_adj_federation_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = fed_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_adj_federation }
+        }
+    }
+    RP_union_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = fed_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_union }
+        }
+    }
+    RP_union_the_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = fed_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_union_the }
+        }
+    }
+    RP_adj_union_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = fed_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_adj_union }
+        }
+    }
+    RP_united_states_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = fed_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_united_states }
+        }
+    }
+    RP_united_states_the_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = fed_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_united_states_the }
+        }
+    }
+    RP_united_provinces_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = fed_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_united_provinces }
+        }
+    }
+    RP_united_provinces_the_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = fed_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_united_provinces_the }
+        }
+    }
+    RP_united_kingdom_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = fed_decisions_hidden
+                has_country_flag = monarchy_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_united_kingdom }
+        }
+    }
+    RP_united_kingdom_the_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = fed_decisions_hidden
+                has_country_flag = monarchy_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_united_kingdom_the }
+        }
+    }
+    RP_federated_states_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = fed_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_federated_states }
+        }
+    }
+    RP_federated_states_the_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = fed_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_federated_states_the }
+        }
+    }
+    RP_federated_provinces_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = fed_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_federated_provinces }
+        }
+    }
+    RP_federated_provinces_the_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = fed_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_federated_provinces_the }
+        }
+    }
+    RP_show_puppet_decisions = {
+
+        icon = generic_form_nation
+        
+        visible = {
+            has_country_flag = puppet_decisions_hidden
+        }
+
+        complete_effect = {
+            clr_country_flag = puppet_decisions_hidden
+        }
+    }
+    RP_hide_puppet_decisions = {
+
+        icon = generic_form_nation
+        
+        visible = {
+            NOT = {
+                has_country_flag = puppet_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            set_country_flag = puppet_decisions_hidden
+        }
+    }
+    RP_occupation_zone_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = puppet_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_occupation_zone }
+        }
+    }
+    RP_occupation_zone_the_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = puppet_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_occupation_zone_the }
+        }
+    }
+    RP_province_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = puppet_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_province }
+        }
+    }
+    RP_province_the_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = puppet_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_province_the }
+        }
+    }
+    RP_adj_province_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = puppet_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_adj_province }
+        }
+    }
+    RP_provincial_government_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = puppet_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_provincial_government }
+        }
+    }
+    RP_provincial_government_the_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = puppet_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_provincial_government_the }
+        }
+    }
+    RP_adj_provincial_government_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = puppet_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_adj_provincial_government }
+        }
+    }
+    RP_region_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = puppet_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_region }
+        }
+    }
+    RP_region_the_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = puppet_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_region_the }
+        }
+    }
+    RP_adj_region_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = puppet_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_adj_region }
+        }
+    }
+    RP_regional_government_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = puppet_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_regional_government }
+        }
+    }
+    RP_regional_government_the_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = puppet_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_regional_government_the }
+        }
+    }
+    RP_adj_regional_government_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = puppet_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_adj_regional_government }
+        }
+    }
+    RP_protectorate_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = puppet_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_protectorate }
+        }
+    }
+    RP_protectorate_the_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = puppet_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_protectorate_the }
+        }
+    }
+    RP_adj_protectorate_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = puppet_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_adj_protectorate }
+        }
+    }
+    RP_state_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = puppet_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_state }
+        }
+    }
+    RP_state_the_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = puppet_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_state_the }
+        }
+    }
+    RP_adj_state_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = puppet_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_adj_state }
+        }
+    }
+    RP_commonwealth_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = puppet_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_commonwealth }
+        }
+    }
+    RP_commonwealth_the_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = puppet_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_commonwealth_the }
+        }
+    }
+    RP_adj_commonwealth_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = puppet_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_adj_commonwealth }
+        }
+    }
+    RP_governorate_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = puppet_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_governorate }
+        }
+    }
+    RP_governorate_the_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = puppet_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_governorate_the }
+        }
+    }
+    RP_adj_governorate_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = puppet_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_adj_governorate }
+        }
+    }
+    RP_adj_country_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = puppet_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_adj_country }
+        }
+    }
+    RP_adj_country_with_def_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = puppet_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_adj_country_with_def }
+        }
+    }
+    RP_colony_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = puppet_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_colony }
+        }
+    }
+    RP_colony_the_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = puppet_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_colony_the }
+        }
+    }
+    RP_adj_colony_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = puppet_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_adj_colony }
+        }
+    }
+    RP_dominion_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = puppet_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_dominion }
+        }
+    }
+    RP_dominion_the_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = puppet_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_dominion_the }
+        }
+    }
+    RP_show_german_decisions = {
+
+        icon = generic_form_nation
+        
+        visible = {
+            NOT = {
+                has_country_flag = puppet_decisions_hidden
+            }
+            has_country_flag = german_decisions_hidden
+        }
+
+        complete_effect = {
+            clr_country_flag = german_decisions_hidden
+        }
+    }
+    RP_hide_german_decisions = {
+
+        icon = generic_form_nation
+        
+        visible = {
+            NOT = {
+                has_country_flag = puppet_decisions_hidden
+            }
+            NOT = {
+                has_country_flag = german_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            set_country_flag = german_decisions_hidden
+        }
+    }
+    RP_RK_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = puppet_decisions_hidden
+                has_country_flag = german_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_RK }
+        }
+    }
+    RP_RP_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = puppet_decisions_hidden
+                has_country_flag = german_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_RP }
+        }
+    }
+    RP_RL_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = puppet_decisions_hidden
+                has_country_flag = german_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_RL }
+        }
+    }
+    RP_militar_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = puppet_decisions_hidden
+                has_country_flag = german_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_militar }
+        }
+    }
+}
