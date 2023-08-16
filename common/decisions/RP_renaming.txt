@@ -1609,6 +1609,122 @@ RP_renaming_category = {
             FROM = { set_cosmetic_tag = RP_adj_Khaganate }
         }
     }
+	RP_Empire_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = monarchy_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_Empire }
+        }
+    }
+	RP_Empire_the_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = monarchy_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_Empire_the }
+        }
+    }
+	RP_adj_Empire_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = monarchy_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_adj_Empire }
+        }
+    }
+	RP_Sublime_State_decision = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+        
+        visible = {
+            NOT = {
+                has_country_flag = monarchy_decisions_hidden
+            }
+        }
+
+        complete_effect = {
+            FROM = { set_cosmetic_tag = RP_Sublime_State }
+        }
+    }
     RP_show_fed_decisions = {
 
         icon = generic_form_nation
