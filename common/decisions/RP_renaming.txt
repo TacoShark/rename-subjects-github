@@ -1319,7 +1319,7 @@ RP_renaming_category = {
             FROM = { set_cosmetic_tag = RP_Emirate_the }
         }
     }
-	RP_adj_emirate_decision = {
+	RP_adj_Emirate_decision = {
 
         icon = generic_form_nation
 
