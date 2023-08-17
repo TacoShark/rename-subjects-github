@@ -3,6 +3,7 @@
  RP_renaming_category_desc:0 "Pick what you want, you get to choose from a hopefully wide array of subject names. §YThese names do not work with collaboration governments, therefore decisions will not show up with them.§!"
  RP_show_decisions:0 "Show decisions for our puppet §Y[FROM.GetNonIdeologyName]§!"
  RP_hide_decisions:0 "Hide decisions for our puppet §Y[FROM.GetNameDef]§!"
+ RP_reset_puppet_name:0 "Reset the name for our puppet §Y[FROM.GetNameDef]§!"
  RP_show_republican_decisions:0 "Show decisions for §Yrepublican§! names"
  RP_hide_republican_decisions:0 "Hide decisions for §Yrepublican§! names"
  RP_show_monarchical_decisions:0 "Show decisions for §Ymonarchist§! names"

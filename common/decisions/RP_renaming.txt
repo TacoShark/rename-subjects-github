@@ -49,6 +49,31 @@ RP_renaming_category = {
             }
         }
     }
+    RP_reset_puppet_name = {
+
+        icon = generic_form_nation
+
+        target_trigger = {
+            FROM = { 
+                is_subject_of = ROOT
+                NOT = { has_country_flag = decisions_are_hidden }
+                if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    NOT = {
+                        has_autonomy_state = autonomy_collaboration_government
+                    }
+                }
+            }
+        }
+
+        complete_effect = {
+            FROM = {
+                drop_cosmetic_tag = yes
+            }
+        }
+    }
     RP_show_republican_decisions = {
 
         icon = generic_form_nation
