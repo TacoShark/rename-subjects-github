@@ -78,6 +78,8 @@
  RP_Empire_the_decision:0 "Empire of the [FROM.GetNonIdeologyName]"
  RP_adj_Empire_decision:0 "[FROM.GetNonIdeologyAdjective] Empire"
  RP_Sublime_State_decision:0 "Sublime [FROM.GetNonIdeologyAdjective] State"
+ RP_Khedivate_decision:0 "Khedivate of [FROM.GetNonIdeologyName]"
+ RP_Khedivate_the_decision:0 "Khedivate of the [FROM.GetNonIdeologyName]"
  RP_united_states_decision:0 "United States of [FROM.GetNonIdeologyName]"
  RP_united_states_the_decision:0 "United States of the [FROM.GetNonIdeologyName]"
  RP_united_provinces_decision:0 "United Provinces of [FROM.GetNonIdeologyName]"
