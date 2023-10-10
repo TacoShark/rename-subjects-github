@@ -4,4 +4,4 @@ tags={
 	"Map"
 }
 name="Rename Subjects: GitHub Edition"
-supported_version="1.12.*"
+supported_version="1.13.*"
